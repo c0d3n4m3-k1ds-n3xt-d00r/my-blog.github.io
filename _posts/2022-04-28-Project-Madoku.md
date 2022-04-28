@@ -196,6 +196,7 @@ def checkUserInput(u_Guess):
             else:
                 print(key, ' is NOT in CORRECT position')                
         else:
+            # A sub funciton to get the position sets 
             def getPositionSet(string, dictionary, key):
                 keyPosition = set()
                 count = 0
@@ -220,13 +221,8 @@ def checkUserInput(u_Guess):
         print(sep='')
 ```
 ```
-if __name__ == '__main__':      
-    print("""
-Welcome to Madoku, where we test your basic math skill. Inspired from the NERDLE game.
-HOW TO PLAY:
-Guess the Madoku in 6 tries. After each guess, the system will let you know
-how close your guess was to the solution.
-""")
+if __name__ == '__main__':
+    print("Madoku is inspired by NERDLE, you can find how the game works there")
     input("Once you're ready, press Enter to start the game...\n")    
     while True:
         setDifficulty = True
