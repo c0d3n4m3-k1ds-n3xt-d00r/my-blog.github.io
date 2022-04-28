@@ -237,7 +237,9 @@ if __name__ == '__main__':
                 print(repr(error))
                 doAfterExcept()
                 continue
-            break        
+            break
+```
+```
         setMode(mode)            
         print("Generating random solution and game screen...")
         time.sleep(1)        
@@ -247,7 +249,9 @@ if __name__ == '__main__':
         screen = ['_ '*len(solution) for i in range(difficulty[0])]
         updateScreen(screen)         
         print('\n'.join(gameScreen)+ '\n')
-        print('Your calculations is in {} spaces, good luck with {} guesses!\n '.format(len(solution), difficulty[0]))        
+        print('Your calculations is in {} spaces, good luck with {} guesses!\n '.format(len(solution), difficulty[0]))
+```
+```
         while countGuess < difficulty[0] and userNotWin: # countGuess starts at 0 
             checkBadInput = True
             while checkBadInput:
