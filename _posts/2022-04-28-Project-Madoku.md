@@ -61,6 +61,8 @@ a while later.
 ```tsql
 import random
 import time
+```
+```
 solution = []
 gameDict = {}
 gameScreen = []
@@ -70,10 +72,14 @@ countGuess = 0
 userNotWin = True
 areYouWinningSon = False
 correctKey = []
+```
+```
 def test(): # Testing, hide this once complete the project
     print(solution) # Testing the solution
     print(gameDict) # Testing the random dictionary
     print(difficulty) # Testing the dificulty
+```
+```
 def setMode(mode):
     while mode == 'custom':
         try:
@@ -96,12 +102,16 @@ def setMode(mode):
         break
     global difficulty
     difficulty = gamemode.get(mode)
+```
+```
 def randomDict(solution):
     g_dict = {}
     for element in solution:
         g_dict[element] = g_dict.get(element, 0) + 1
     global gameDict
     gameDict = g_dict
+```
+```
 def randomGenerator(nPrevious):
     if nPrevious in ['*','/']:
         nCurrent = random.randint(2,9) 
@@ -112,7 +122,8 @@ def randomGenerator(nPrevious):
     else:
         nCurrent = random.choice(random.choice(['0123456789','+-*/', difficulty[2]]))
     return nCurrent
-
+```
+```
 def randomsolution(diff):
     while True:
         n1 = str(random.randint(1,9))
@@ -133,18 +144,26 @@ def randomsolution(diff):
     global solution
     solution = [i for i in e] + ['='] + list(str(cal))
     return solution
+```
+```
 def updateScreen(screen):
     global gameScreen
     gameScreen = screen
+```
+```
 def doAfterExcept():
     time.sleep(2)
-    print(sep = '')    
+    print(sep = '')
+```
+```
 def updateGame(u_Guess, count):
     userGuess = ' '.join(list(u_Guess))
     gameScreen[count] = userGuess
     updateScreen(gameScreen)
     global countGuess
     countGuess = count + 1
+```
+```
 def checkUserInput(u_Guess):
     gameSolution = ''.join(solution)
     if u_Guess == gameSolution:
@@ -177,7 +196,6 @@ def checkUserInput(u_Guess):
             else:
                 print(key, ' is NOT in CORRECT position')                
         else:
-            # A sub-function finding the positions set of the key
             def getPositionSet(string, dictionary, key):
                 keyPosition = set()
                 count = 0
@@ -199,7 +217,9 @@ def checkUserInput(u_Guess):
                     print("All {} are NOT in CORRECT position".format(key))                
                 else:
                     print(key,' is NOT in CORRECT position')        
-        print(sep='')    
+        print(sep='')
+```
+```
 if __name__ == '__main__':      
     print("""
 Welcome to Madoku, where we test your basic math skill. Inspired from the NERDLE game.
