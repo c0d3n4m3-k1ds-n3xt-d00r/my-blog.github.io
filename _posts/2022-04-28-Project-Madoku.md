@@ -227,11 +227,7 @@ if __name__ == '__main__':
     while True:
         setDifficulty = True
         while setDifficulty:
-            mode = input('''Select the game difficulty:
-    - Easy: 8 guesses and 0 < solution < 100 
-    - Normal: 7 guesses and 0 < solution < 500
-    - Hard: 6 guesses and 0 < solution < 1000
-    - Custom: Choose your number of guesses and solution limit\n\n''')
+            mode = input("Select the game difficulty:\n - Easy: 8 guesses and 0 < solution < 100\n - Normal: 7 guesses and 0 < solution < 500\n - Hard: 6 guesses and 0 < solution < 1000\n - Custom: Choose your number of guesses and solution limit\n\n")
             mode = mode.lower()
             try:
                 if mode == 'easy' or mode == 'normal' or mode == 'hard' or mode == 'custom':
@@ -255,8 +251,7 @@ if __name__ == '__main__':
         while countGuess < difficulty[0] and userNotWin: # countGuess starts at 0 
             checkBadInput = True
             while checkBadInput:
-                guess = str(input('''What is your guess?
-    Input your guessing calculation in {} spaces (e.g 1+1=2 is 5 spaces): '''.format(len(solution)) + '\n\n'))
+                guess = str(input("What is your guess? Input your guessing calculation in {} spaces (e.g 1+1=2 is 5 spaces): ".format(len(solution)) + '\n\n'))
                 print(sep = '')          
                 try:
                     equalIndex = guess.index('=')
