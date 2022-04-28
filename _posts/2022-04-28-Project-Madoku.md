@@ -57,10 +57,10 @@ tuple efficiency after the project so that's a shame.
 a while later. 
 
 
+
 ```tsql
 import random
 import time
-
 solution = []
 gameDict = {}
 gameScreen = []
@@ -70,12 +70,10 @@ countGuess = 0
 userNotWin = True
 areYouWinningSon = False
 correctKey = []
-
 def test(): # Testing, hide this once complete the project
     print(solution) # Testing the solution
     print(gameDict) # Testing the random dictionary
     print(difficulty) # Testing the dificulty
-
 def setMode(mode):
     while mode == 'custom':
         try:
@@ -98,14 +96,12 @@ def setMode(mode):
         break
     global difficulty
     difficulty = gamemode.get(mode)
-
 def randomDict(solution):
     g_dict = {}
     for element in solution:
         g_dict[element] = g_dict.get(element, 0) + 1
     global gameDict
     gameDict = g_dict
-
 def randomGenerator(nPrevious):
     if nPrevious in ['*','/']:
         nCurrent = random.randint(2,9) 
@@ -133,30 +129,24 @@ def randomsolution(diff):
             continue
         if cal > diff[0] and cal < diff[1] and str(cal) != e and type(cal) == int:
         # Change the cal limit to reduce the difficulty of the game
-            break
-    
+            break    
     global solution
     solution = [i for i in e] + ['='] + list(str(cal))
     return solution
-
 def updateScreen(screen):
     global gameScreen
     gameScreen = screen
-
 def doAfterExcept():
     time.sleep(2)
-    print(sep = '')
-    
+    print(sep = '')    
 def updateGame(u_Guess, count):
     userGuess = ' '.join(list(u_Guess))
     gameScreen[count] = userGuess
     updateScreen(gameScreen)
     global countGuess
     countGuess = count + 1
-
 def checkUserInput(u_Guess):
     gameSolution = ''.join(solution)
-    
     if u_Guess == gameSolution:
         print('Congratulations! You win in {} guess(es)'.format(countGuess))
         global areYouWinningSon
@@ -164,7 +154,6 @@ def checkUserInput(u_Guess):
         global userNotWin
         userNotWin = False
         return userNotWin
-    
     userDict = {}
     for element in u_Guess:
         userDict[element] = userDict.get(element, 0) + 1        
@@ -178,12 +167,10 @@ def checkUserInput(u_Guess):
     print(shared, ':  IN the solution\n')
     print(not_shared, ':  NOT IN the solution\n')
     print('-------------------------------------')
-    
     for key in shared_keys:
         global correctKey
         if key not in correctKey:
-            correctKey.append(key)
-            
+            correctKey.append(key)            
         if userDict.get(key) == 1 and gameDict.get(key) == 1:
             if u_Guess.index(key) == gameSolution.index(key):
                 print(key,' is in CORRECT position')
@@ -212,13 +199,10 @@ def checkUserInput(u_Guess):
                     print("All {} are NOT in CORRECT position".format(key))                
                 else:
                     print(key,' is NOT in CORRECT position')        
-        print(sep='')
-    
-if __name__ == '__main__':
-      
+        print(sep='')    
+if __name__ == '__main__':      
     print("""
 Welcome to Madoku, where we test your basic math skill. Inspired from the NERDLE game.
-
 HOW TO PLAY:
 Guess the Madoku in 6 tries. After each guess, the system will let you know
 how close your guess was to the solution.
@@ -241,8 +225,7 @@ The game will look like this with your guess:
 - Standard order of operations applies, so calculate * and / before + and -
 eg. 3+2*5=13 not 25!
 """)
-    input("Once you're ready, press Enter to start the game...\n")
-    
+    input("Once you're ready, press Enter to start the game...\n")    
     while True:
         setDifficulty = True
         while setDifficulty:
@@ -260,42 +243,32 @@ eg. 3+2*5=13 not 25!
                 print(repr(error))
                 doAfterExcept()
                 continue
-            break
-        
-        setMode(mode)
-            
+            break        
+        setMode(mode)            
         print("Generating random solution and game screen...")
-        time.sleep(1)
-        
+        time.sleep(1)        
         randomsolution(difficulty[1]) # Update the global variable solution
-        randomDict(solution) # Make a dictionary of global variable solution
-        
-        #test() # Testing, hide when complete
-        
+        randomDict(solution) # Make a dictionary of global variable solution        
+        #test() # Testing, hide when complete       
         screen = ['_ '*len(solution) for i in range(difficulty[0])]
-        updateScreen(screen) 
-        
+        updateScreen(screen)         
         print('\n'.join(gameScreen)+ '\n')
-        print('Your calculations is in {} spaces, good luck with {} guesses!\n '.format(len(solution), difficulty[0]))
-        
+        print('Your calculations is in {} spaces, good luck with {} guesses!\n '.format(len(solution), difficulty[0]))        
         while countGuess < difficulty[0] and userNotWin: # countGuess starts at 0 
             checkBadInput = True
             while checkBadInput:
                 guess = str(input('''What is your guess?
     Input your guessing calculation in {} spaces (e.g 1+1=2 is 5 spaces): '''.format(len(solution)) + '\n\n'))
-                print(sep = '')
-            
+                print(sep = '')          
                 try:
                     equalIndex = guess.index('=')
                 except:
                     print("You miss the '=' sign there")
                     doAfterExcept()
-                    continue
-                
+                    continue              
                 beforeEqual = ''.join([str(i) for i in guess[:equalIndex] if i != ' '])
                 afterEqual = ''.join([str(i) for i in guess[equalIndex+1:] if i != ' '])
-                userGuess = beforeEqual + '=' + afterEqual 
-            
+                userGuess = beforeEqual + '=' + afterEqual             
                 try:
                     u_solution = eval(beforeEqual)
                     if str(u_solution) != afterEqual or len(userGuess) != len(solution):
@@ -307,8 +280,7 @@ eg. 3+2*5=13 not 25!
                 except ValueError as error:
                     print(repr(error))
                     doAfterExcept()
-                    continue
-                    
+                    continue                   
                 break
             updateGame(userGuess, countGuess)
             print(sep='')
@@ -317,13 +289,11 @@ eg. 3+2*5=13 not 25!
             print('-------------------------------------')
             correct = ',  '.join(sorted(correctKey))
             print('Here are correct elements you have so far:  ' + correct + '\n')
-            print('-------------------------------------')
-            
+            print('-------------------------------------')            
         if areYouWinningSon == False:
             print("You have one job! Let's try again\n\n")
             s = ''.join(solution)
-            print("And the solution is: {}\n\n'".format(s))
-            
+            print("And the solution is: {}\n\n'".format(s))            
         time.sleep(2)
         gameRestart = input('Press any keys to restart the game or NO to quit\n\n')
         print(sep = '')
