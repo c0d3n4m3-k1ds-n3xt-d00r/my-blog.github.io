@@ -222,12 +222,42 @@ def checkUserInput(u_Guess):
 ```
 ```
 if __name__ == '__main__':
-    print("Madoku is inspired by NERDLE, you can find how the game works there")
-    input("Once you're ready, press Enter to start the game...\n")    
+      
+    print("""
+Welcome to Madoku, where we test your basic math skill. Inspired from the NERDLE game.
+
+HOW TO PLAY:
+Guess the Madoku in 6 tries. After each guess, the system will let you know
+how close your guess was to the solution.
+
+The game will look like this with your guess:
+
+    1 0 + 1 0 = 2 0
+    _ _ _ _ _ _ _ _
+    _ _ _ _ _ _ _ _
+    _ _ _ _ _ _ _ _
+    _ _ _ _ _ _ _ _
+    _ _ _ _ _ _ _ _
+         
+- Each guess is a calculation
+- You can use 0 1 2 3 4 5 6 7 8 9 + - * / or =
+- It must contain one “=”
+- It must only have a number to the right of the “=”, not another calculation
+- The number to the right of the "=" (solution) will be based on the difficulty of the game
+(Easy: solution less than 100; Normal: solution less than 500; Hard: solution less than 1000)
+- Standard order of operations applies, so calculate * and / before + and -
+eg. 3+2*5=13 not 25!
+""")
+    input("Once you're ready, press Enter to start the game...\n")
+    
     while True:
         setDifficulty = True
         while setDifficulty:
-            mode = input("Select the game difficulty:\n - Easy: 8 guesses and 0 < solution < 100\n - Normal: 7 guesses and 0 < solution < 500\n - Hard: 6 guesses and 0 < solution < 1000\n - Custom: Choose your number of guesses and solution limit\n\n")
+            mode = input('''Select the game difficulty:
+    - Easy: 8 guesses and 0 < solution < 100 
+    - Normal: 7 guesses and 0 < solution < 500
+    - Hard: 6 guesses and 0 < solution < 1000
+    - Custom: Choose your number of guesses and solution limit\n\n''')
             mode = mode.lower()
             try:
                 if mode == 'easy' or mode == 'normal' or mode == 'hard' or mode == 'custom':
@@ -238,34 +268,41 @@ if __name__ == '__main__':
                 doAfterExcept()
                 continue
             break
-```
-```
-        setMode(mode)            
+        
+        setMode(mode)
+            
         print("Generating random solution and game screen...")
-        time.sleep(1)        
+        time.sleep(1)
+        
         randomsolution(difficulty[1]) # Update the global variable solution
-        randomDict(solution) # Make a dictionary of global variable solution        
-        #test() # Testing, hide when complete       
+        randomDict(solution) # Make a dictionary of global variable solution
+        
+        #test() # Testing, hide when complete
+        
         screen = ['_ '*len(solution) for i in range(difficulty[0])]
-        updateScreen(screen)         
+        updateScreen(screen) 
+        
         print('\n'.join(gameScreen)+ '\n')
         print('Your calculations is in {} spaces, good luck with {} guesses!\n '.format(len(solution), difficulty[0]))
-```
-```
+        
         while countGuess < difficulty[0] and userNotWin: # countGuess starts at 0 
             checkBadInput = True
             while checkBadInput:
-                guess = str(input("What is your guess? Input your guessing calculation in {} spaces (e.g 1+1=2 is 5 spaces): ".format(len(solution)) + '\n\n'))
-                print(sep = '')          
+                guess = str(input('''What is your guess?
+    Input your guessing calculation in {} spaces (e.g 1+1=2 is 5 spaces): '''.format(len(solution)) + '\n\n'))
+                print(sep = '')
+            
                 try:
                     equalIndex = guess.index('=')
                 except:
                     print("You miss the '=' sign there")
                     doAfterExcept()
-                    continue              
+                    continue
+                
                 beforeEqual = ''.join([str(i) for i in guess[:equalIndex] if i != ' '])
                 afterEqual = ''.join([str(i) for i in guess[equalIndex+1:] if i != ' '])
-                userGuess = beforeEqual + '=' + afterEqual             
+                userGuess = beforeEqual + '=' + afterEqual 
+            
                 try:
                     u_solution = eval(beforeEqual)
                     if str(u_solution) != afterEqual or len(userGuess) != len(solution):
@@ -277,7 +314,8 @@ if __name__ == '__main__':
                 except ValueError as error:
                     print(repr(error))
                     doAfterExcept()
-                    continue                   
+                    continue
+                    
                 break
             updateGame(userGuess, countGuess)
             print(sep='')
@@ -286,11 +324,13 @@ if __name__ == '__main__':
             print('-------------------------------------')
             correct = ',  '.join(sorted(correctKey))
             print('Here are correct elements you have so far:  ' + correct + '\n')
-            print('-------------------------------------')            
+            print('-------------------------------------')
+            
         if areYouWinningSon == False:
             print("You have one job! Let's try again\n\n")
             s = ''.join(solution)
-            print("And the solution is: {}\n\n'".format(s))            
+            print("And the solution is: {}\n\n'".format(s))
+            
         time.sleep(2)
         gameRestart = input('Press any keys to restart the game or NO to quit\n\n')
         print(sep = '')
