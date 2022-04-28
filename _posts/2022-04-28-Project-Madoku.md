@@ -196,7 +196,6 @@ def checkUserInput(u_Guess):
             else:
                 print(key, ' is NOT in CORRECT position')                
         else:
-            # A sub funciton to get the position sets 
             def getPositionSet(string, dictionary, key):
                 keyPosition = set()
                 count = 0
