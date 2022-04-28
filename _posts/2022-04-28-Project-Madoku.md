@@ -226,24 +226,6 @@ Welcome to Madoku, where we test your basic math skill. Inspired from the NERDLE
 HOW TO PLAY:
 Guess the Madoku in 6 tries. After each guess, the system will let you know
 how close your guess was to the solution.
-
-The game will look like this with your guess:
-
-    1 0 + 1 0 = 2 0
-    _ _ _ _ _ _ _ _
-    _ _ _ _ _ _ _ _
-    _ _ _ _ _ _ _ _
-    _ _ _ _ _ _ _ _
-    _ _ _ _ _ _ _ _
-         
-- Each guess is a calculation
-- You can use 0 1 2 3 4 5 6 7 8 9 + - * / or =
-- It must contain one “=”
-- It must only have a number to the right of the “=”, not another calculation
-- The number to the right of the "=" (solution) will be based on the difficulty of the game
-(Easy: solution less than 100; Normal: solution less than 500; Hard: solution less than 1000)
-- Standard order of operations applies, so calculate * and / before + and -
-eg. 3+2*5=13 not 25!
 """)
     input("Once you're ready, press Enter to start the game...\n")    
     while True:
