@@ -56,7 +56,8 @@ tuple efficiency after the project so that's a shame.
 - I haven't added comments, which is a bad habbit from my side cuz I won't remember anything when I look at the project 
 a while later. 
 
-
+Anyway, here is the PROJECT, I have seperated all the functions for the sake my future self wanna look at the program again.
+Enjoy!
 
 ```tsql
 import random
