@@ -77,13 +77,15 @@ def minion_game(string):
 There would be nothing to say if I got through all the test cases. As a matter of fact, test cases must be the most confusing part of this problem. They really complicated a simple game like this.
 
 The last test case requires an output of *Kevin 400173457964* within a time limit of under 2 seconds
+
 Imagine loop through a nested for-loop 400173457964 times.
+
 If you are still unable to understand how fucking TERRIBLE this test case is, my first approach probably run this test in 10 mins, well for the record, I haven't tried this test case as I quitted after 2 mins of processing.
 My program can't even handle simpler test case of *Sturart 7501500* as a result.
 ```
 NANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANAN...
 ```
-This is one of the test case, the NA will just go on and on for like thounsands of words. 
+Anyway, this is one of the test case, the NA will just go on and on for like thounsands of words. 
 
 So what did I do next to increase my program efficiency?
 
