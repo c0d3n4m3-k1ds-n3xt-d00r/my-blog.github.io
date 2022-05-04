@@ -13,9 +13,9 @@ Umm, care to elaborate? - you probably asked.
 
 Sure, with pleasure.
 
-First of all, What is Hacker Rank?. If you are learning to code like me, you should know this website (if not, what have you been doing with your life). For those who don't know, this is a free website that help you learn programming with tons of exercises and practices in different programming languages ranging from C++ to Python. 
+You must be wondering: what is Hacker Rank?. If you are learning to code like me, you should know this website (if not, what have you been doing with your life). For those who don't know, this is a free website that help you learn programming with tons of exercises and practices in different programming languages ranging from C++ to Python. 
 
-Secondly, why am I mad? Remember when I said programming is annoying? No? Well it is, and it's annoying as fuck, especially when you spent days turning to weeks on this problem and you just can't get past some test cases.
+Next, why am I mad? Remember when I said programming is annoying? No? Well it is, and it's annoying as fuck, especially when you spent days turning to weeks on this problem and you just can't get past some test cases.
 
 And that problem is called 'The Minion Game.'
 
