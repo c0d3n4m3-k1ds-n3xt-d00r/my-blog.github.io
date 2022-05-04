@@ -38,7 +38,7 @@ Kevin's substrings are: 'e', 'el', 'ell', 'ello', 'o'
 
 Obviously Stuart wins here
 
-And that's also what I need to code, I will be given a 'string' of letter, find out who wins the game or if they are draw.
+And that's also what I need to code, I will be given a 'string' of letters, find out who wins the game or if they are draw.
 The logic is quite simple here, as you can see from my example above, the 'h' is accumulatingly added with the rest of the letters, then it moves on with the next letter, repeated the loop, and so on until the last letter is 'o'.
 
 It will look like this if you write it down:
