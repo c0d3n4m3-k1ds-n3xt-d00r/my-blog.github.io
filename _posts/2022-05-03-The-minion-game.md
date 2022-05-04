@@ -22,7 +22,8 @@ And that problem is called 'The Minion Game.'
 ```
 Basically, in this game, there will be two players named Stuart and Kevin. 
 
-They will be given a 'string' of letters (it's a word but not really one as some are literally just "AWWJFNW..." like a teenager slamming their keyboard). 
+They will be given a 'string' of letters (it's a word but not really one as some are literally 
+just "AWWJFNW..." like a teenager slamming their keyboard). 
 
 The players then need to find the subset of the given 'string' of letters (or substring in other word). 
 
@@ -90,7 +91,7 @@ My program can't even handle simpler test case of *Stuart 7501500* as a result.
 ```
 NANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANAN...
 ```
-Anyway, this is one of the test case, the NA will just go on and on for like thounsands of words. 
+Anyway, this is one of the test case, the NA will just go on and on for like thounsands of letters. 
 
 So what did I do next to increase my program efficiency?
 
