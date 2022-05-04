@@ -84,7 +84,7 @@ The last test case requires an output of *Kevin 400173457964* within a time limi
 Imagine loop through a nested for-loop 400173457964 times.
 
 If you are still unable to understand how fucking TERRIBLE this test case is, my first approach probably run this test in 10 mins, well for the record, I haven't tried this test case as I quitted after 2 mins of processing.
-My program can't even handle simpler test case of *Sturart 7501500* as a result.
+My program can't even handle simpler test case of *Stuart 7501500* as a result.
 ```
 NANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANANNANAN...
 ```
