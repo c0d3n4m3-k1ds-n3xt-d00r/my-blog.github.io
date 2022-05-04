@@ -31,8 +31,11 @@ The catch here is that Stuart's substrings have to start with consonants, wherea
 Whoever finds the most substrings win, if they have same amount of substrings, they are draw.
 ```
 For example: 'hello'
+
 Stuart's substrings are: 'h', 'he', 'hel', 'hell', 'hello', 'l', 'll', 'llo', 'l'
+
 Kevin's substrings are: 'e', 'el', 'ell', 'ello', 'o'
+
 Obviously Stuart wins here
 
 And that's also what I need to code, I will be given a 'string' of letter, find out who wins the game or if they are draw.
