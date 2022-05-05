@@ -24,7 +24,7 @@ Theoretically, this idea sounds good right? Well, no, not exactly. By doing the 
 
 Did I realise this? No, I was so fixated on trying out different ways to count all the substrings that it distracted me from the main problem.
 
-
+(Continue in Part 3)
 
 
 
