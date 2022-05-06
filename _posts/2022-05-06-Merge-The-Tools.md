@@ -38,7 +38,7 @@ Not gonna brag but as soon as I saw and read this prblem carefully, I knew I cou
 I then proceed to analyze the mentioned troubles:
 
 - Firstly, the splitting string can be solved easily with textwrap module using wrap() method, I mean you can slice and loop through the string s but it's too much for me to even give some thoughts (Cuz I did give it a thought).
-- Moving on the second trouble, my initial idea was to do something similar to The Minion Game, write a function to find all the repeated charaters, remove their occurences and finally print out the wanted unique character substrings. However, I quickly got rid of that idea as the progam will be very inefficient with all those nested loops (find() and remove()). I then came up with the idea to use dictionary to get all that unique keys at once while maintianing their order.
+- Moving on the second trouble, my initial idea was to do something similar to The Minion Game, write a function to find all the repeated characters, remove their occurences and finally print out the wanted unique character substrings. However, I quickly got rid of that idea as the progam will be very inefficient with all those nested loops (find() and remove()). I then came up with the idea to use dictionary to get all that unique keys at once while maintianing their order.
 
 This is my final work:
 ```
