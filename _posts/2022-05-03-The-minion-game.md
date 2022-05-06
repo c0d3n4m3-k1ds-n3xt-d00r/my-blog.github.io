@@ -1,4 +1,4 @@
-## The Minion Game
+## HackerRank: The Minion Game (Medium)
 
 WARNING
 VIEWER DISCRETION IS ADVISED
