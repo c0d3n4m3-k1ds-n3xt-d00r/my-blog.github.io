@@ -4,7 +4,7 @@ I just wanna say, it feels nice to get a problem done in once a while.
 
 I have been so frustrated with the Minion Game and the technical issues with the autograder in this Python learning website that it started to be a bit demotivated for me to finish my daily coding goal.
 
-So this is the problem, Imma just copy-paste straight away from HackerRank, wait is this legal?
+Anyway, here is the problem, Imma just copy-paste straight away from HackerRank.
 
 Given:
 
