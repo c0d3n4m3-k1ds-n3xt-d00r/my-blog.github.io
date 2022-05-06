@@ -1,4 +1,4 @@
-##HackerRank: Merge The Tools (Medium)
+## HackerRank: Merge The Tools (Medium)
 
 I just wanna say, it feels nice to get a problem done in once a while.
 
