@@ -1,6 +1,6 @@
 ## HackerRank: Merge The Tools (Medium)
 
-I just wanna say, it feels nice to get a problem done in once a while.
+I just wanna say, it feels nice to be distracted and get a problem done in once a while.
 
 I have been so frustrated with the Minion Game and the technical issues with the autograder in this Python learning website that it started to be a bit demotivated for me to finish my daily coding goal.
 
