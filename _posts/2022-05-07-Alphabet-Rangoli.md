@@ -47,7 +47,7 @@ def print_rangoli(size):
     used = alpha[0:size]
     #Reverse the used list for future need
     used.reverse()
-    # Initialize an empty variable named seq short for sequence
+    #Initialize an empty variable named seq short for sequence
     seq = ''
     #Initialize a prev list short for previous
     prev = []
