@@ -41,31 +41,32 @@ This is what I came up with:
 ```
 import string
 def print_rangoli(size):
-    # Make a list that contains the alphabet
+    #Make a list that contains the alphabet
     alpha = list(string.ascii_lowercase)
-    # Slice the alpha list and assign as "used" to get the alphabetic characters that gonna appear
+    #Slice the alpha list and assign as "used" to get the alphabetic characters that gonna appear
     used = alpha[0:size]
-    # Reverse the used list for future need
+    #Reverse the used list for future need
     used.reverse()
     # Initialize an empty variable named seq short for sequence
     seq = ''
-    # Initialize a prev list short for previous
+    #Initialize a prev list short for previous
     prev = []
-    # A for-loop of the top half of the rangoli
+    #A for-loop of the top half of the rangoli
     for i in range(size):
-        """The linear equation between size and spaces replaced by dash is 2*size - 2
-        The logic is to have a single changing alphabet letter in the middle/center
-        works as the midpoint for the seq variable, seq[::-1] is to horizontally
-        flip the seq variable to make it looks mirrored"""
-        print(seq.rjust((2*size-2),'-') + used[i] + seq[::-1].ljust((2*size-2),'-'))        
-        # prev contains all the seq variables in the for-loop for future need
+    
+        #The linear equation between size and spaces replaced by dash is 2*size - 2
+        #The logic is to have a single changing alphabet letter in the middle/center
+        #works as the midpoint for the seq variable, seq[::-1] is to horizontally
+        #flip the seq variable to make it looks mirrored
+        print(seq.rjust((2*size-2),'-') + used[i] + seq[::-1].ljust((2*size-2),'-')) 
+        #prev contains all the seq variables in the for-loop for future need
         prev.append(seq)
-        # A growing seq: ''(nothing)-, c-, c-b- for example
+        #A growing seq: ''(nothing)-, c-, c-b- for example
         seq = seq + used[i] + '-'
     
-    """prev and used list then pop the midpoint of the diamond shaped rangoli
-    c-b- and a (like in the size = 3 example). After, this two lists reverse
-    for the below half of the rangoli, applied the same logic as the top half"""
+    #prev and used list then pop the midpoint of the diamond shaped rangoli
+    #c-b- and a (like in the size = 3 example). After, this two lists reverse
+    #for the below half of the rangoli, applied the same logic as the top half
     prev.pop()
     used.pop()
     prev.reverse()
