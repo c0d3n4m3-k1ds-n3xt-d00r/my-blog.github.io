@@ -13,10 +13,12 @@ rightaway in re-creating it.
 Some difficulties that I encountered during the project:
 - First of all, about how to make the game has the most freedom as possible, I thought a lot about making the
 solution or calculation as random as possible. At first I want to make the spaces fixed in 8 spaces like
-NERDLE, but after a while I figured out a way to make possible random solution without any fixed element
+NERDLE, but after a while I figured out a way to make possible random solution without any fixed element.
+
 - Secondly, I thought a bit how to update the game screen as well, like when you input your guess and the game
 got updated on the screen. I didn't know about global variables few days ago, it's truly a game changer when I 
 learned about it. 
+
 - Thirdly, the biggest problem, giving the hint of how close user guess to the solution, it looks simple but 
 there were few complicated things when I started working on it. My initial thought is like the game NERDLE, 
   If their guesses have numbers that not in the solution, print out those number not in solution.
@@ -25,8 +27,7 @@ there were few complicated things when I started working on it. My initial thoug
     two dictionaries of their guess and the solution, using intersection() of sets.
     + I got the common keys between the guess and solution, which is really useful, after a few debugging
     I remembered that index() and find() only find the first index of the element, which means if there
-    are more than 2 same numbers in the common keys, the hint will be wrong. Like imagine this:
-    "1+1=2" is the solution
+    are more than 2 same numbers in the common keys, the hint will be wrong. Like imagine this: "1+1=2" is the solution
     And "4-2=2" is their guess: In this guess, the hint would initially say 2 is in wrong position, which is false,
     cuz there is one " 2 " in the correct position.
     Or "3-1=2" is their guess: In this guess, the hint would initially say 1 is in wrong position, which is false,
@@ -43,16 +44,18 @@ there were few complicated things when I started working on it. My initial thoug
     Or "3-1=2" is their guess, the same principle applied, and the hint says "There is at least one ' 1 ' in correct 
     position, which hints the player/user that there are more than one ' 1 ' in the solution.
     + Of course, if the position set intersection() is < 0, it will hint All ... not in correct position.
-    + Having function within function is the first time, I didn't even think it works.
+    
 - Last but not least, a bit of thought about the game difficulties, which then solved by creating a global difficulty
 dictionaries, I have to add/change parameters of some functions here and there as I didn't plan to make difficulty
 at first. I only thought about it after letting my brother played and it was too hard.
 
 Some thoughts after the project:
 - It was an absolutely fun experience as I learned tons throughout the project, including global variables, sets methods.
+
 - Although the project works and runs, I am not confident in its time complexity as I think I overused list, like
 if it's temporary local variable and I can just create a tuple for better efficiency. However, I only learned about
 tuple efficiency after the project so that's a shame.
+
 - I haven't added comments, which is a bad habbit from my side cuz I won't remember anything when I look at the project 
 a while later. 
 
