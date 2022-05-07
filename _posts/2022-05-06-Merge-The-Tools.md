@@ -4,7 +4,7 @@ I just wanna say, it feels nice to be distracted and get a problem done in once 
 
 I have been so frustrated with the Minion Game and the technical issues with the autograder in this Python learning website that it started to be a bit demotivated for me to finish my daily coding goal.
 
-Anyway, here is the problem, Imma just copy-paste straight away from HackerRank.
+Anyway, here is the problem, Imma just copy-paste straight away from HackerRank (kidding, I will rephrase it, please don't sue me).
 
 Given:
 
