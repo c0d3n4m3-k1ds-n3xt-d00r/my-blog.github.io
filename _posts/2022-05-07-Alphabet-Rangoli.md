@@ -7,15 +7,15 @@ Basically, you are given an integer N. Your task is to print out an alphabet ran
 This is what it will look like once you printed out:
 
 #size 3
-
+```
 ----c----
 --c-b-c--
 c-b-a-b-c
 --c-b-c--
 ----c----
-
+```
 #size 5
-
+```
 --------e--------
 ------e-d-e------
 ----e-d-c-d-e----
@@ -25,7 +25,7 @@ e-d-c-b-a-b-c-d-e
 ----e-d-c-d-e----
 ------e-d-e------
 --------e--------
-
+```
 Now that I look at it again, I once again have no idea how I solved this a few weeks
 
 Anyway, let's see how my past-self analyzed the problem from given examples:
