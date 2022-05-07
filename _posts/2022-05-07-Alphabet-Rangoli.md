@@ -32,7 +32,7 @@ Anyway, let's see how my past-self analyzed the problem from given examples:
 
 First of all, you can easily see that the rangoli has two axes of symmetry, vertically and horizontally. Therefore, as soon as I come up with for-loop logic of one halves I can apply the same logic again on the other halves. In other word, instead of solving one whole problem, I just need to technically do 50% of it.
 
-Secondly, I need to find the linear equation between the size of the rangoli and the number of dashes (or how "centered" the alphabetic characters are)
+Secondly, I need to find the linear equation between the size of the rangoli and the number of dashes (or how "centered" the alphabetic characters are).
 
 You can stop here if you want figure it out yourself, my hint is to know about .rjust(), .ljust() and .center() methods.
 
