@@ -79,5 +79,6 @@ if __name__ == '__main__':
     print_rangoli(n)
 ```
 
-Gotta admit though, it looks ugly, but it works so I was happy with it(I guess?). I also want to challenge you to come up with another way to do this using 
-'-'.join(). as it should be better than my program.
+I think I have taken this problem a bit too literally with the seq variable but it works so I was happy with it(I guess?). 
+
+My Challenge To You: Come up with another way to do this using '-'.join(). as it should be better than my program.
