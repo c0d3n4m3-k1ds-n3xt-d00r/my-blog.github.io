@@ -14,7 +14,7 @@ Anyway, with the motorbike exam on my mind, my life then took a few more turns a
 
 I'm fine now. Thanks for asking.
 
-After those events, I realise health is really underrated when you're young. I had neck-ache in my 20, imagine how worse it could be in the next 10 years if I become a developer. It scares me to think to be honest. I hate to say this but my mom is right. The sooner you realise about how important your health is, the better your future. Think about it, would it make any sense if you spend all the money you make on medicines? Of course not right! Therefore, be more concious about your health from now on and you will thank your past-self in the future. 
+After those events, I realise health is really underrated when you're young. I had neck-ache in my 20, imagine how worse it could be in the next 10 years if I become a developer. It scares me to think to be honest. I hate to say this but my mom is right. The sooner you realise about how important your health is, the better your future. Think about it, would it make any sense if you spend all the money you make on medicines? Of course not! Therefore, be more concious about your health from now on and you will thank your past-self in the future. 
 
 Let's wrap up this episode with the last update on my life. Right now I'm reading a book called " Hello các bạn mình là tôi đi code dạo " by author Phạm Huy Hoàng, so far it's been quite interesting and realistic about the whole Computer Science Major myths and claims. Stay tuned for the next episode as I'm gonna dicuss some of the contents in the book that I feel related. 
 
