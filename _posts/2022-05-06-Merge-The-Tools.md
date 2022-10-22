@@ -33,7 +33,7 @@ Some initial thoughts about the trouble you may encounter:
 
 You can stop here and solve it yourself if you want.
 
-Not gonna brag but as soon as I saw and read this prblem carefully, I knew I could be solve it a few hours or less. As it's just straight up testing your problem-solving skill, I don't need to learn anything new like in The Minion Game. However, having tried another Medium level before, the only thing I fear is the test cases as they may contain runtime Error.
+As it's just straight up testing your problem-solving skill, I don't need to learn anything new like in The Minion Game. However, having tried another Medium level before, the only thing I fear is the test cases as they may contain runtime Error.
 
 I then proceed to analyze the mentioned troubles:
 
