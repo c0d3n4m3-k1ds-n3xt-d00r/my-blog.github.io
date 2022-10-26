@@ -1,3 +1,5 @@
+## RMIT Vietnam Sem-B Reflection
+
 It has only been half a year but so many things changed significantly. Funny how life turns out sometimes, especially in such a short time when you look back like this.
 
 Also, I have deleted some of the previous posts due to how cringe and naive they are. If you have read those, I'm so sorry that you have to witness my past-self cringiness.
