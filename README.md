@@ -9,4 +9,4 @@ My dream is to become a Software Engineer and until then, I still have lots and 
 
 ## https://laansdole.github.io/
 
-(MyNote)[https://codesandbox.io/s/react-responsive-nav-forked-d2m7wm?file=/src/components/Navbar.js]
+[MyNote](https://codesandbox.io/s/react-responsive-nav-forked-d2m7wm?file=/src/components/Navbar.js)
