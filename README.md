@@ -9,10 +9,4 @@ My dream is to become a Software Engineer and until then, I still have lots and 
 
 ## https://laansdole.github.io/
 
-# Note for personal use
 
-- [My React Note](https://codesandbox.io/s/react-responsive-nav-forked-d2m7wm?file=/src/components/Navbar.js)
-
-- [Social Media Network UML](https://www.freeprojectz.com/use-case/social-networking-site-use-case-diagram)
-- [Marketplace UML](https://www.conceptdraw.com/solution-park/resource/images/solutions/testrapid-uml/Software-development-UML-use-case-diagram-Banking-system70.png)
-- [Software UML](https://www.conceptdraw.com/solution-park/software-uml)
